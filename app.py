@@ -13,7 +13,7 @@ def main():
     }
     st.sidebar.title('A Basic Demo with Maps: Philly Residential Tax Delinquencies & Census Metrics')
     st.sidebar.markdown(
-        'Philly Zip Code Map of Actionable Residential Tax Delinquencies '
+        'Philly Zip Code Maps of Actionable Residential Tax Delinquencies '
         'and Census Metrics (Median Income, Percent Below Poverty Line, Unemployment) '
         'from the American Community Survey (ACS), collected by the U.S. Census Bureau.\n\n'
         'An account is delinquent when Real Estate Tax is still unpaid on January 1 the following year the tax was due. Actionable accounts are those the City are currently working to collect.\n\n'

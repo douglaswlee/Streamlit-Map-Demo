@@ -6,9 +6,9 @@ from helpers import preprocess, preprocess_acs, filter_zip, _max_width_
 def app():
     _max_width_()
     
-    st.title('Side-by-Side Philly Zipcode Map of Residential Tax Delinquencies and Census Metrics')
+    st.title('Side-by-Side Philly Zip Code Map of Residential Tax Delinquencies and Census Metrics')
     st.write('Interactive breakdown of total accounts and principal due for actionable delinquent residential accounts in Philly, side-by-side with income, poverty, and unemployment data from the census.')
-    st.write('Use the dropdown menus to select a given delinquency and census metric associated with the corresponding map. Hover over an area to view the corresponding metric value and zip code number.')
+    st.write('Use the dropdown menus to select a given delinquency and census metric associated with the corresponding map. Hover over an area to view the corresponding metric value and zip code number. While far from perfectly correlated, zip codes with larger total number of delinquent accounts and total principal due tend to have higher poverty levels and unemployment rates and lower median incomes.')
     
     main_df = preprocess()
     

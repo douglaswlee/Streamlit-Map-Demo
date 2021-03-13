@@ -10,7 +10,7 @@ def app():
     
     st.title('Filterable Philly Zip Code Map of Residential Tax Delinquencies and Census Metrics')
     st.write('Interactive breakdown of total accounts and principal due for actionable delinquent residential accounts in Philly, which can be filterd to show areas by levels of income, poverty, and unemployment from the census.')
-    st.write('Use the dropdown menu to select a given delinquency metric to be displayed on the map, then a census metric to filter the map. Use the resulting slider to select the census metric threshold determining which zip codes to display. Hover over an area to view the corresponding metric value and zip code number.')
+    st.write('Use the dropdown menu to select a given delinquency metric to be displayed on the map, then a census metric to filter the map. Use the resulting slider to select the census metric threshold determining which zip codes to display. Hover over an area to view the corresponding metric value and zip code number.  While far from perfectly correlated, zip codes with larger total number of delinquent accounts and total principal due tend to have higher poverty levels and unemployment rates and lower median incomes.')
     
     c1, c2 = st.beta_columns(2)
     metric = c1.selectbox('Select Delinquency Metric', ('Total Accounts', 'Total Principal Due'))
